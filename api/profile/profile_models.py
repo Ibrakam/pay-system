@@ -11,7 +11,8 @@ class UserDent(BaseModel):
     city: str
     reg_date: datetime
 
-class CradDent(BaseModel):
+class CardDent(BaseModel):
+    user_id: int
     card_number: int
     card_holder: str
     exp_date: int
